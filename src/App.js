@@ -20,7 +20,7 @@ class App extends Component {
   // Lifecycle method that runs once the app is mounted
   componentDidMount(){
     // Fetching the URL, JSONify it and then assigning to the state
-    fetch("http://jsonplaceholder.typicode.com/users")
+    fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
       .then((users) => this.setState(() => { return {monsters: users} }
     ));

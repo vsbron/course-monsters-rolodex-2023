@@ -4,7 +4,7 @@ Small app that filters monsters list received from API.
 
 ## Technical info
 
-- Was built with React Class Component;
+- Was built with React Functional Component [Class Component is stored under comments];
 - Compressed and deployed via Parcel;
 
 ### Notes

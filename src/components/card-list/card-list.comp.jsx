@@ -6,13 +6,13 @@ import './card-list.style.css';
 
 const CardList = ( {monsters} ) => (
   <div className="card__list">
-    {monsters.map(monster => {
-      return <Card monster={monster} />
-    })}
+    {monsters.map( monster => <Card monster={monster} /> ) }
   </div>
 )
 
 export default CardList;
+
+
 
 /////////////////////
 // CLASS COMPONENT //
@@ -23,17 +23,13 @@ export default CardList;
 //   render() {
 //     // Getting the props
 //     const {monsters} = this.props;
-//     console.log(monsters);
 
 //     return (
 //       <div className="card__list">
-//         {monsters.map(monster => {
-//           return <Card monster={monster} />
-//         })}
+//         { monsters.map( monster => <Card monster={monster} /> ) }
 //       </div>
 //     )
 //   }
-
 // }
 
 // export default CardList;

@@ -18,6 +18,22 @@
   transform: scale(1.05);
 }
 
-.secondary-heading{
-  margin: 3rem 0 .5rem;
+.card__container img{
+  max-width:100%;
+  height:auto
+}
+
+@media screen and (max-width:31em){
+  .card__container{
+    display: block;
+    min-width:300px;
+    margin:0 auto;
+  }
+  .card__container img{max-width:150px}
+}
+@media screen and (max-width:22.5em){
+  .card__container{
+    width:100%;
+    min-width:auto;
+  }
 }

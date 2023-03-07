@@ -3,10 +3,17 @@ import { Component } from "react";
 import './search-box.style.css';
 
 const SearchBox = ( {onChangeHandler, className, placeholder} ) =>  (
-   <input type="search" className={`search-box ${className}`} placeholder={placeholder} onChange={onChangeHandler} />
+   <input
+      type="search"
+      className={`search-box ${className}`}
+      placeholder={placeholder}
+      onChange={onChangeHandler}
+   />
 )
 
 export default SearchBox;
+
+
 
 /////////////////////
 // CLASS COMPONENT //
@@ -21,7 +28,12 @@ export default SearchBox;
 
 //     return (
 //       <div>
-//         <input type="search" className={`search-box ${className}`} placeholder={placeholder} onChange={onChangeHandler} />
+//         <input
+//           type="search"
+//           className={`search-box ${className}`}
+//           placeholder={placeholder}
+//           onChange={onChangeHandler}
+//         />
 //       </div>
 //     )
 //   }

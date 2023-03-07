@@ -7,18 +7,33 @@
 :root{
   --color-light-blue1: #95dada;
   --color-light-blue2: #0ccac4;
-  --color-gray: gray;
+  --color-gray: #888;
+  --color-white: #fff;
 
   --color-gradient1: rgb(7, 27, 82);
   --color-gradient2: rgb(0, 128, 128);
 }
 
-html{ font-size: 62.5% }
+::selection {
+  background-color:var(--light-blue2);
+  color:var(--color-white)
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scrollbar-color:var(--color-gradient2) var(--color-light-blue1);
+  padding-bottom: 12rem}
+
+::-webkit-scrollbar{width:17px}
+::-webkit-scrollbar-track{background-color:var(--color-gradient2)}
+::-webkit-scrollbar-thumb{background-color:var(--color-light-blue1)}
+::-webkit-scrollbar-thumb:hover{background:var(--color-light-blue1)}
 
 body{
   box-sizing: border-box;
 
-  font: 400 16px/1.4 -apple-system, BlinkMacSystemFont, "Sergio UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Nuue", sans-serif;
+  font: 400 16px/1.4 "Open Sans", sans-serif;
   background: linear-gradient(to left, var(--color-gradient1), var(--color-gradient2));
   text-align: center;
   
@@ -31,4 +46,28 @@ body{
   font-size: 9rem;
   color: var(--color-light-blue2);
   font-family: "Bigelow Rules";
+}
+
+.secondary-heading{
+  font-size: 3rem;
+  margin: 3rem 0 .5rem;
+}
+
+@media screen and (max-width: 100em){
+  html{font-size: 55%} 
+  body{font-size: 14px}
+  .secondary-heading{font-size: 2.5rem}
+}
+
+@media screen and (max-width: 62em){
+  html{font-size:50%}
+}
+
+@media screen and (max-width: 45em){
+  html{font-size:45%}
+  .primary-heading {font-size: 8rem}
+}
+
+@media screen and (max-width: 31em){
+  .primary-heading{font-size: 7rem}
 }

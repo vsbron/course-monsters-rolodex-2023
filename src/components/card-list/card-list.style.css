@@ -5,3 +5,23 @@
   grid-template-columns: repeat(4, 1fr);
   gap:20px;
 }
+
+@media screen and (max-width:75em){
+  .card__list{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width:62em){
+  .card__list{
+    width: 95vw;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width:31em){
+  .card__list{
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
